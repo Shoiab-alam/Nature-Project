@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>
+
+    </title>
+</head>
+
+<body>
+
+    <div class="flex items-center justify-center flex-col">
+        <div class="border-2 p-10 bg-blue-400 rounded-2xl mt-20">
+            <h1 id="heading" class="text-white text-2xl pb-5">Type Your Weight and height <br> to get bmi.</h1>
+            <input type="text" id="weight" class="border-4 w-80 mb-5" placeholder="use only numbers for get weight">
+            <p id="show-error" class="text-red-600"></p> <br>
+            <input type="text" placeholder="type your height" id="height" class="border-4 w-80 mb-5"><br>
+            <p id="show-error1" class="text-red-600"></p>
+            <button type="submit" id="button"
+                class="bg-green-400 p-2 rounded-lg text-white text-2xl">button</button>
+        </div>
+    </div>
+
+    <script>
+
+
+        document.getElementById('button').addEventListener('click', function(){
+            var w =  document.getElementById('weight').value;
+            var h =  document.getElementById('height').value;
+            var bmi = w/h ** h;
+
+            document.getElementById('heading').innerHTML =  `bmi ${bmi}`;
+
+            if(w == ''){
+                document.getElementById('show-error').innerHTML = '**data must be filled';
+                return false;
+            } 
+            
+
+
+
+
+
+            if(h == ''){
+                document.getElementById('show-error1').innerHTML = '**data must be filled';
+                return false;
+            }
+        });
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/144c646aae.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>dropdown1 new</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 7%;
+            background: chocolate;
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+        }
+
+        header .logo {
+            color: #000;
+            text-decoration: none;
+        }
+
+        header .navbar ul {
+            list-style: none;
+        }
+
+        header .navbar ul li {
+            position: relative;
+            float: left;
+        }
+
+        header .navbar ul li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        header .navbar ul li a:hover {
+            background: white;
+            color: #000;
+            left: 0;
+        }
+
+        #check {
+            display: none;
+        }
+
+        header label {
+            font-size: 35px;
+            display: none;
+        }
+
+        header .navbar ul li ul {
+            position: absolute;
+            background: chocolate;
+            width: 200px;
+            display: none;
+        }
+
+        header .navbar ul li ul li {
+            width: 100%;
+            left: 0;
+        }
+
+        header .navbar ul li ul li ul {
+            left: 150px;
+            top: 0px;
+        }
+
+        header .navbar ul li:hover>ul {
+            display: initial;
+        }
+
+        @media (max-width: 991px) {
+            header {
+                padding: 20px;
+            }
+
+            header label {
+                display: initial;
+            }
+
+            header .navbar {
+                background: chocolate;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                border-top: 1px solid black;
+                display: none;
+            }
+
+            header .navbar ul li {
+                width: 100%;
+                text-align: center;
+            }
+
+            header .navbar ul li ul {
+                width: 100%;
+                position: relative;
+            }
+
+            header .navbar ul li ul li {
+                background: chocolate;
+            }
+
+            header .navbar ul li ul li ul {
+                width: 100%;
+                left: 0;
+            }
+
+            #check:checked~.navbar {
+                display: initial;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="#" class="logo">LOGO</a></h1>
+        <input type="checkbox" id="check">
+        <label for="check" class="bars">bars</label>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Portfolio</a>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <img src="images/1.jpg" class="image img-fluid" alt="">
+
+    <script>
+        const wrong = document.querySelector('.bars');
+        const close = document.querySelector('.bars');
+        const image = document.querySelector('.image');
+
+        wrong.addEventListener('click', function(){
+            document.querySelector('.bars').textContent = "wrong";
+            document.querySelector('.image').style.marginTtop = "100px";
+        })
+
+
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

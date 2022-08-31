@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/144c646aae.js" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+  <!-- Bootstrap CSS -->
+  <title>Project</title>
+
+  <style>
+    heading h1 {
+      width: 70%;
+      margin: auto;
+      font-family: sans-serif;
+      padding: 50px;
+      text-decoration: underline;
+
+    }
+
+    .container {
+      width: 70%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      position: relative;
+    }
+
+    .box {
+      width: 33.33%;
+      transition: 1s ease;
+      height: 700px;
+      position: relative;
+
+
+    }
+
+    .box:hover {
+      width: 70%;
+
+    }
+
+    .box img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+
+    .box_1 {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      color: white;
+    }
+
+    .box_2 {
+      display: flex;
+      justify-content: space-between;
+      padding: 25px 20px;
+    }
+
+    .box_3,
+    .box_4,
+    .box_5 {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <heading>
+    <h1>Follow for Toursim</h1>
+    <div class="container">
+      <div class="box" onmouseover="onMouseOver()" onmouseleave="onMouseLeave()">
+        <img src="images/54.jpg" alt="" class="img_1" style="border-radius: 10px 0 0 10px;">
+        <div class="box_1">
+          <div class="box_2">
+            <div>NATURES</div>
+            <div class="box_3"><span
+                style="background: skyblue;padding:0px 10px;font-size: 30px;border-radius: 15px;">⊳</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" onmouseover="onOver()" onmouseleave="onLeave()">
+        <img src="images/55.jpg" alt="" class="img_2">
+        <div class="box_1">
+          <div class="box_2">
+            <div>Hills</div>
+            <div class="box_4"><span
+                style="background: chocolate;padding:0px 10px;font-size: 30px;border-radius: 15px;">⊳</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box" onmouseover="onOvers()" onmouseleave="onLeaves()">
+        <img src="images/56.jpg" alt="" class="img_3" style="border-radius: 0 10px 10px 0;">
+        <div class="box_1">
+          <div class="box_2">
+            <div>Sahara</div>
+            <div class="box_5"><span
+                style="background: brown;padding:0px 10px;font-size: 30px;border-radius: 15px;">⊳</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </heading>
+
+
+
+  <script>
+    // 1 //
+    const onMouseOver = () => {
+      document.querySelector('.box_3').style.display = 'block';
+    }
+    const onMouseLeave = () => {
+      document.querySelector('.box_3').style.display = 'none';
+    }
+
+    //2 //
+    const onOver = () => {
+      document.querySelector('.box_4').style.display = 'block';
+    }
+    const onLeave = () => {
+      document.querySelector('.box_4').style.display = 'none';
+    }
+
+    // 3.
+
+    const onOvers = () => {
+      document.querySelector('.box_5').style.display = 'block';
+    }
+
+    const onLeaves = () => {
+      document.querySelector('.box_5').style.display = 'none';
+    }
+
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #f1f1f1;
+}
+
+header {
+    background: #ffffff;
+    position: fixed;
+    top:0;right:0;left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 0px 3%;
+}
+header .navbar ul li, .icon ul li{
+    list-style: none;
+}
+header .navbar ul li, .icon ul li {
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+}
+header .navbar ul li a:after{
+    content: "";
+    position: absolute;
+    background: #ff3c78;
+    height: 3px;width:0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s ease;
+}
+header .navbar ul li a:hover:after {
+    width: 100%;
+}
+header .icon {
+    margin-left: 200px;
+} 
+.set-bg {
+    height: 350px;
+    padding-top: 100px;
+    margin-right:7px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0px 7%;
+    position: relative;
+}
+.set-bg h4 {
+    color: #111;
+    font-weight: 700;
+}
+.set-bgg {
+    background:url(../images/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 707px;
+    margin-right:7px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    padding: 0px 7%;
+
+}
+.set-bgg h1 {
+    font-family: "Cookie",cursive;
+    color: #111;
+    font-size: 70px;
+}
+.set-bgg p, .set-bg p {
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+.set-bgg a, .set-bg a {
+    color: #111111;
+    font-weight: 700;
+    text-decoration: none;
+}
+.set-bg1 {
+    height: 400px;
+}
+.product h4 {
+    color: #111;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+.product button, .cards h6 a {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+    text-decoration: none;
+}
+.cards h6 a,h6 {
+    text-align: center;
+}
+.cards h5 {
+    text-align: center;
+    color: #111; font-weight: 600;
+}
+
+.rating {
+    color: #ffc107;
+    font-size: 10px;
+    text-align: center;
+    margin-top:-10px;
+    line-height: 18px;
+}
+.rating i {
+    padding: 0px;
+    font-size: 8px;
+}
+.card {
+    border: none;
+    margin-top: 20px;
+}
+.carousel-item h5 {
+    font-size: 18px;
+    color: #ca1515;
+    margin-top: 200px;
+}
+
+.carousel-item h1{
+    font-size: 80px;
+    color: #111111;
+    font-family: "Cookie", cursive;
+}
+.carousel-item h5, h1, a {
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+.carousel-item a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/*  trend item*/
+
+.trend-item {
+    display: flex;
+    position: relative;
+}
+.trend-item h6 a {
+    border: none;
+    background: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+    text-decoration: none;
+}
+.trend-item .rating {
+    margin-right: 95px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+.trend-item h5 {
+    color: #111111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.services__item {
+    position: relative;
+}
+.services__item i {
+    font-size: 40px;
+    color: #ca1515;
+}
+.services__item p {
+    position: absolute;
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+    margin-left: 90px;
+    margin-top: -0px;
+
+}
+.services__item h6 {
+    position: absolute;
+    margin-left: 90px;
+    color: #111111;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: -35px;
+}
+
+.seventy{
+    width: 75%;
+}
+.seventy h6 {
+    font-size: 12px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 600;
+}
+.seventy h1 {
+    font-size: 60px;
+    color: #ca1515;
+    font-family: "Cookie",cursive;
+    line-height: 46px;
+    margin-bottom: 10px;
+}
+.seventy #demo7 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+.seventy a {
+    color: #111111;
+    font-weight: 700px;
+    text-decoration: none;
+}
+
+.bg-set {
+    position:relative;
+}
+.box {
+    position:absolute;
+    top: 0;
+    left:0;
+    background: #ffffff;
+    opacity: 90%;
+    width:100%;
+    height:100%;
+    color:black;
+    display:none;
+   transition: all 0.5s;
+}
+.bg-set:hover .box {
+    display:initial;
+}
+.box i {
+    margin-top: 130px;
+    font-size: 35px;
+}
+.box i, p {
+    display: flex;
+    justify-content: center;
+}  
+
+
+.footer form input {
+    height: 52px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #666;
+}
+.footer p {
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+}
+.footer h6 {
+    color: #111111;
+    font-size: 15px;
+    font-weight: 700;
+}
+.footer ul li {
+    list-style: none;
+}
+.footer ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat",sans-serif;
+    color: #666;
+    font-weight: 400;
+    line-height: 30px;
+    margin-left: -100px;
+}
+.footers a{
+    float: left;
+    color:#666;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+}
+#check {
+    display: none;
+}
+header label {
+    font-size: 30px;
+    display: none;
+}
+
+
+@media (max-width:1200px){
+   header .icon {
+       margin: 0px;
+   }
+   .seventy {
+    width: 100%;
+}
+}
+@media (max-width: 991px){
+    header {
+        padding: 20px;
+    }
+    header .navbar {
+        width: 100%;
+        position: absolute;
+        top:100%;left:0px;right:0px;
+        background: #ffffff;
+        border-top:1px solid black;
+        display: none;
+        text-align: center;
+    }
+    header .navbar ul li {
+        width: 100%;
+    }
+    header label {
+        display: initial;
+    }
+    #check:checked  ~ .navbar {
+        display: initial;
+    }   
+    .seventy {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .instagram img {
+        width: 100%;
+    }
+}

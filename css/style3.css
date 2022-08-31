@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    box-shadow: 0 0 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;    
+    background: #fff;
+    position: fixed;
+    left:0;right: 0;
+    top:0;   
+    z-index: 1;
+}
+header .navbar {
+    position: absolute;
+    top: 100%;
+    box-shadow: 1px 2px 0 lightgrey;
+    height: 400px;
+    display: none;
+    background: #fff;
+    left:0;
+}
+
+header label {
+    color: #48487f;
+    font-size: 20px;
+}
+header label a {
+    color: #48487f;
+    text-decoration: none;
+    padding-left: 20px;
+    font-size: 25px;
+}
+header .navbar ul li {
+    list-style: none;
+    position: relative;
+}
+header .navbar ul li a {
+    padding: 10px 20px;
+    display: block;
+    color: #48487f;
+    text-decoration: none;
+    font-size: 20px;
+}
+header .quote ul li {
+    list-style: none;
+    float: left;
+    position: relative;
+}
+header .quote ul li a{
+    padding: 10px 20px;
+    display: block;
+    color: #48487f;
+    text-decoration: none;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .navbar{
+    display: initial;
+}
+.class h1 {
+    color: #48487f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+
+}
+#updates p {
+    font-weight: 400;
+    text-align: justify;
+}
+.write h5 a {
+    color:#48487f;
+}
+.write p {
+    background: #f1f1f1;
+    padding: 150px;
+    font-size: 18px;
+}
+.class p{
+    font-family: 'Ledger',serif;
+    color: #202124;
+    font-size: 18px;
+}
+.class button {
+    background-color: #48487f;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 20px;
+    border: none;
+}
+.blue {
+    color: #48487f;
+    font-size: 18px;
+    font-weight: 500px;
+}
+.fa-star{
+    color: #fbbc04;
+    font-size: 13px;
+    padding: 1px;
+}
+.fa-ellipsis-v {
+    position: absolute;
+    right:0;
+    font-size: 15px;
+    color: #333;
+}
+.link a {
+    color:  #48487f;
+}
+.bg-dir button {
+    background-color: #48487f;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 20px;
+    border: none;
+}
+#contact button {
+    background-color: #48487f;
+    color: #fff;
+    padding: 15px 50px;
+    font-size: 20px;
+    border: none;
+}
+.paragraph p {
+    line-height: 10px;
+    font-weight: 500;
+}
+.light p {
+    opacity: 50%;
+}
+
+.b0t70b {
+    max-width: 1080px;
+}
+
+@media (max-width:675px) {
+    * {
+        transition: all 0.5s;
+    }
+    .map {
+        display: none;
+    }
+    .quote ul li a {
+        font-size: 17px;
+        text-align: center;
+    }
+    .quote {
+        position: fixed;
+        bottom: 0;
+        background: #fff;
+        width:100%;
+    }
+    #updates, #about, #contact, #gallery {
+        text-align:center;
+    }
+
+
+}
+@media (max-width:760px) {
+    * {
+        transition: all 0.5s;
+    }
+    header .quote ul li a {
+        font-size: 12px;
+    }
+    .class h1 {
+        font-size: 40px;
+    }
+}
